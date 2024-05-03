@@ -1,0 +1,9 @@
+extends layout 
+
+block content
+  h1= title
+  p Add a new message
+  form(action="/new", method="post")
+    input(type="text", name="messageText", placeholder="Message...")
+    input(type="text", name="messageUser", placeholder="Your name...")
+    button(type="submit") Add Message
